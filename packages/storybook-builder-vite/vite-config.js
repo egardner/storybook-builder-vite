@@ -12,7 +12,10 @@ module.exports.pluginConfig = function pluginConfig(options, type) {
             compilers: [storybookCompilerPlugin()],
         }),
     ];
-    if (framework === 'vue' || framework === 'vue3') {
+    if (framework === 'vue') {
+        plugins.push(require('vite-plugin-vue2').createVuePlugin());
+    }
+    if (framework === 'vue3') {
         plugins.push(require('@vitejs/plugin-vue')());
     }
     if (framework === 'svelte') {

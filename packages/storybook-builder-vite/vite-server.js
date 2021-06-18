@@ -25,7 +25,7 @@ module.exports.createViteServer = async function createViteServer(
         },
         resolve: {
             alias: {
-                vue: 'vue/dist/vue.esm-bundler.js',
+                vue: 'vue/dist/vue.esm.js',
             },
         },
         plugins: pluginConfig(options, 'development'),
