@@ -36,15 +36,15 @@ export default {
         classes() {
             return {
                 'storybook-button': true,
-                'storybook-button--primary': this.props.primary,
-                'storybook-button--secondary': !this.props.primary,
-                [`storybook-button--${this.props.size || 'medium'}`]: true,
+                'storybook-button--primary': this.primary,
+                'storybook-button--secondary': !this.primary,
+                [`storybook-button--${this.size || 'medium'}`]: true,
             }
         },
 
         style() {
             return {
-                backgroundColor: this.props.backgroundColor
+                backgroundColor: this.backgroundColor
             };
         }
     },
