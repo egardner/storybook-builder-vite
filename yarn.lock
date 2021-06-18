@@ -3816,39 +3816,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/vue3@npm:^6.3.0-rc.4":
-  version: 6.3.0-rc.4
-  resolution: "@storybook/vue3@npm:6.3.0-rc.4"
-  dependencies:
-    "@storybook/addons": 6.3.0-rc.4
-    "@storybook/core": 6.3.0-rc.4
-    "@storybook/core-common": 6.3.0-rc.4
-    "@types/webpack-env": ^1.16.0
-    core-js: ^3.8.2
-    global: ^4.4.0
-    react: 16.14.0
-    react-dom: 16.14.0
-    read-pkg-up: ^7.0.1
-    regenerator-runtime: ^0.13.7
-    ts-dedent: ^2.0.0
-    ts-loader: ^8.0.14
-    vue-docgen-api: ^4.38.0
-    vue-docgen-loader: ^1.5.0
-    vue-loader: ^16.0.0
-    webpack: 4
-  peerDependencies:
-    "@babel/core": "*"
-    "@vue/compiler-sfc": ^3.0.0
-    babel-loader: ^7.0.0 || ^8.0.0
-    vue: ^3.0.0
-  bin:
-    build-storybook: bin/build.js
-    start-storybook: bin/index.js
-    storybook-server: bin/index.js
-  checksum: 72e3549ac133a49c2c1da90fdca22df75e74026ec9a693a05469129ef5625753dede45ffc1176aeb3e7789ec181f59a15feff75179a5d6c515db8968a26f8cc6
-  languageName: node
-  linkType: hard
-
 "@storybook/vue@npm:^6.3.0-rc.4":
   version: 6.3.0-rc.11
   resolution: "@storybook/vue@npm:6.3.0-rc.11"
@@ -4432,7 +4399,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/component-compiler-utils@npm:^3.2.0":
+"@vue/component-compiler-utils@npm:^3.1.0, @vue/component-compiler-utils@npm:^3.2.0":
   version: 3.2.2
   resolution: "@vue/component-compiler-utils@npm:3.2.2"
   dependencies:
@@ -4449,36 +4416,6 @@ __metadata:
     prettier:
       optional: true
   checksum: 3ce00881ddeaadd5964093af6497944f948095a5570b721cb2185493898ebcaf16830482583ef4adee6e470c01a8759686f706090e7dc10a475651ba1c240566
-  languageName: node
-  linkType: hard
-
-"@vue/reactivity@npm:3.1.1":
-  version: 3.1.1
-  resolution: "@vue/reactivity@npm:3.1.1"
-  dependencies:
-    "@vue/shared": 3.1.1
-  checksum: 07dd517ad0ccdbd060bf1918fa474b26e6854daf91929b0879a1ce244b53075ed909784142c16b0a954c8860b7c441c0bddab9ff1a0f7094b1b837615d663653
-  languageName: node
-  linkType: hard
-
-"@vue/runtime-core@npm:3.1.1":
-  version: 3.1.1
-  resolution: "@vue/runtime-core@npm:3.1.1"
-  dependencies:
-    "@vue/reactivity": 3.1.1
-    "@vue/shared": 3.1.1
-  checksum: 05a55320321a149ce7c5e1ff71bf8ef12eee80e326e9e29d92050db88aad5f6789a5e2ceaa334de5a95348d5abd0cd19d54bb96634730386899b45164c442fcc
-  languageName: node
-  linkType: hard
-
-"@vue/runtime-dom@npm:3.1.1":
-  version: 3.1.1
-  resolution: "@vue/runtime-dom@npm:3.1.1"
-  dependencies:
-    "@vue/runtime-core": 3.1.1
-    "@vue/shared": 3.1.1
-    csstype: ^2.6.8
-  checksum: 4487337ed2a57dba07e2770defee3d7fa2756aac64f86db4c4dd8aebc066cb85f4c01fb1497fa2cbd0be6cebbd7ff42db4af6c1cdfa9b57370fadbb5de90ee87
   languageName: node
   linkType: hard
 
@@ -7265,7 +7202,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csstype@npm:^2.5.7, csstype@npm:^2.6.8":
+"csstype@npm:^2.5.7":
   version: 2.6.17
   resolution: "csstype@npm:2.6.17"
   checksum: 82128d8c8b515a874eeb734f6ed3a32871180f37c7c5665951bfc9932415f6a15298d10fe7f973553f528a5c6cd478ad5a4bd55f213171b9e08ffe13d58fded7
@@ -8230,24 +8167,13 @@ __metadata:
     "@storybook/addon-a11y": ^6.3.0-rc.4
     "@storybook/addon-essentials": ^6.3.0-rc.4
     "@storybook/vue": ^6.3.0-rc.4
+    prettier: ^2.3.1
     storybook-builder-vite: 0.0.9
     vite: ^2.3.2
     vite-plugin-vue2: ^1.6.2
     vue: ^2.6.14
-  languageName: unknown
-  linkType: soft
-
-"example-vue@workspace:packages/example-vue":
-  version: 0.0.0-use.local
-  resolution: "example-vue@workspace:packages/example-vue"
-  dependencies:
-    "@storybook/addon-a11y": ^6.3.0-rc.4
-    "@storybook/addon-essentials": ^6.3.0-rc.4
-    "@storybook/vue3": ^6.3.0-rc.4
-    "@vitejs/plugin-vue": ^1.2.1
-    storybook-builder-vite: 0.0.9
-    vite: ^2.3.2
-    vue: ^3.0.5
+    vue-loader: ^15.9.7
+    vue-template-compiler: ^2.6.14
   languageName: unknown
   linkType: soft
 
@@ -10764,7 +10690,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"loader-utils@npm:^1.1.0, loader-utils@npm:^1.2.3, loader-utils@npm:^1.4.0":
+"loader-utils@npm:^1.0.2, loader-utils@npm:^1.1.0, loader-utils@npm:^1.2.3, loader-utils@npm:^1.4.0":
   version: 1.4.0
   resolution: "loader-utils@npm:1.4.0"
   dependencies:
@@ -12498,7 +12424,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.0.5, prettier@npm:^2.2.1":
+"prettier@npm:^2.0.5, prettier@npm:^2.2.1, prettier@npm:^2.3.1":
   version: 2.3.1
   resolution: "prettier@npm:2.3.1"
   bin:
@@ -15773,6 +15699,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"vue-hot-reload-api@npm:^2.3.0":
+  version: 2.3.4
+  resolution: "vue-hot-reload-api@npm:2.3.4"
+  checksum: dedefb87284bdba222a93bc55bc1441ee16d9e30546d57107c42d21102cfcafba058c8be35f2678370cee0588f1bf3ee7b32dbf3c1610e5c9bf851a5996a8351
+  languageName: node
+  linkType: hard
+
 "vue-inbrowser-compiler-utils@npm:^4.40.0":
   version: 4.40.0
   resolution: "vue-inbrowser-compiler-utils@npm:4.40.0"
@@ -15782,18 +15715,38 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"vue-loader@npm:^16.0.0":
-  version: 16.2.0
-  resolution: "vue-loader@npm:16.2.0"
+"vue-loader@npm:^15.9.7":
+  version: 15.9.7
+  resolution: "vue-loader@npm:15.9.7"
   dependencies:
-    chalk: ^4.1.0
-    hash-sum: ^2.0.0
-    loader-utils: ^2.0.0
-  checksum: 823096da5bba4beaf92308aa87f32781cd3923cb57fa04b784daca91a754a00c955fe9a3ce637c09e6c57f696325eee2f9ab9f1510b552756a4df3aebde90c15
+    "@vue/component-compiler-utils": ^3.1.0
+    hash-sum: ^1.0.2
+    loader-utils: ^1.1.0
+    vue-hot-reload-api: ^2.3.0
+    vue-style-loader: ^4.1.0
+  peerDependencies:
+    css-loader: "*"
+    webpack: ^3.0.0 || ^4.1.0 || ^5.0.0-0
+  peerDependenciesMeta:
+    cache-loader:
+      optional: true
+    vue-template-compiler:
+      optional: true
+  checksum: 48c7785a24b2561618eb7524c14fa44c25f0277aa6a523b5e8d872585cfe863cc077ad5e2852bb94c98173ee936ddc465db659726f08e50b6151331301ea4372
   languageName: node
   linkType: hard
 
-"vue-template-compiler@npm:^2.2.0":
+"vue-style-loader@npm:^4.1.0":
+  version: 4.1.3
+  resolution: "vue-style-loader@npm:4.1.3"
+  dependencies:
+    hash-sum: ^1.0.2
+    loader-utils: ^1.0.2
+  checksum: 6c5e914011903c65acb5642987da6590b743a1f484d79fec2e10f1406fb5beca0c152cd4f10f8eae32412349bd09cad7f1ede00b18fd74481de78e8402a8c7c0
+  languageName: node
+  linkType: hard
+
+"vue-template-compiler@npm:^2.2.0, vue-template-compiler@npm:^2.6.14":
   version: 2.6.14
   resolution: "vue-template-compiler@npm:2.6.14"
   dependencies:
@@ -15814,17 +15767,6 @@ fsevents@^1.2.7:
   version: 2.6.14
   resolution: "vue@npm:2.6.14"
   checksum: 542787dc830efc5cb8285a8046bba5a81e6f952e70e4e1a308cc8d51c68f152fd02da5edbd47b6a14908437d76fdee048aa3f64341d4777fb37ce231e2d845df
-  languageName: node
-  linkType: hard
-
-"vue@npm:^3.0.5":
-  version: 3.1.1
-  resolution: "vue@npm:3.1.1"
-  dependencies:
-    "@vue/compiler-dom": 3.1.1
-    "@vue/runtime-dom": 3.1.1
-    "@vue/shared": 3.1.1
-  checksum: 60e8f95dd741e22fadbe034adc8d962062e136b37578e918fad7363679ce75ed55c819a5d98f68b2f811cbfd9a6d23961ed36100bf9d919ee99abecc804c0342
   languageName: node
   linkType: hard
 
